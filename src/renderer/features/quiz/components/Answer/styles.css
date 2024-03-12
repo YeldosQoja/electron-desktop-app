@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .answer {
+    @apply flex mt-6 w-full p-4 border-2 rounded-3xl text-left text-gray-800 border-gray-200 text-xl font-medium justify-between items-center;
+  }
+
+  .selected {
+    @apply border-green-500
+  }
+
+  .correct {
+    @apply bg-green-500 border-green-500 text-gray-200
+  }
+
+  .wrong {
+    @apply bg-red-500 border-red-500 text-gray-200
+  }
+}

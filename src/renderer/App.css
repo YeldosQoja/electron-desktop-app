@@ -1,0 +1,29 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+}
+
+@layer components {
+  .game-item {
+    @apply aspect-square rounded-3xl flex justify-center items-center hover:cursor-pointer select-none
+  }
+
+  .randomizer-item {
+    @apply bg-[#A1EEBD]
+  }
+
+  .quiz-item {
+    @apply bg-[#F6F7C4]
+  }
+
+  .window-item {
+    @apply bg-[#7BD3EA]
+  }
+}
